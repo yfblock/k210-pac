@@ -46009,7 +46009,6 @@ impl Peripherals {
     #[doc = r"Returns all the peripherals *once*"]
     #[inline]
     pub fn take() -> Option<Self> {
-        /*
         riscv::interrupt::free(|_| {
             if unsafe { DEVICE_PERIPHERALS } {
                 None
@@ -46017,8 +46016,7 @@ impl Peripherals {
                 Some(unsafe { Peripherals::steal() })
             }
         })
-        */
-        Some(unsafe { Peripherals::steal() })
+        //Some(unsafe { Peripherals::steal() })
     }
     #[doc = r"Unchecked version of `Peripherals::take`"]
     #[inline]
