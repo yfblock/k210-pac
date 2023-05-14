@@ -542,7 +542,7 @@ impl CLINT {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const clint::RegisterBlock {
-        0x0200_0000 as *const _
+        0xffff_ffc0_0200_0000 as *const _
     }
 }
 impl Deref for CLINT {
@@ -656,7 +656,7 @@ impl PLIC {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const plic::RegisterBlock {
-        0x0c00_0000 as *const _
+        0xffff_ffc0_0c00_0000 as *const _
     }
 }
 impl Deref for PLIC {
@@ -1033,7 +1033,7 @@ impl UARTHS {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const uarths::RegisterBlock {
-        0x3800_0000 as *const _
+        0xffff_ffc0_3800_0000 as *const _
     }
 }
 impl Deref for UARTHS {
@@ -1695,7 +1695,7 @@ impl GPIOHS {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const gpiohs::RegisterBlock {
-        0x3800_1000 as *const _
+        0xffff_ffc0_3800_1000 as *const _
     }
 }
 impl Deref for GPIOHS {
@@ -9405,7 +9405,7 @@ impl KPU {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const kpu::RegisterBlock {
-        0x4080_0000 as *const _
+        0xffff_ffc0_4080_0000 as *const _
     }
 }
 impl Deref for KPU {
@@ -10357,7 +10357,7 @@ impl FFT {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const fft::RegisterBlock {
-        0x4200_0000 as *const _
+        0xffff_ffc0_4200_0000 as *const _
     }
 }
 impl Deref for FFT {
@@ -11344,7 +11344,7 @@ impl DMAC {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const dmac::RegisterBlock {
-        0x5000_0000 as *const _
+        0xffff_ffc0_5000_0000 as *const _
     }
 }
 impl Deref for DMAC {
@@ -17870,7 +17870,7 @@ impl GPIO {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const gpio::RegisterBlock {
-        0x5020_0000 as *const _
+        0xffff_ffc0_5020_0000 as *const _
     }
 }
 impl Deref for GPIO {
@@ -18723,7 +18723,7 @@ impl UART1 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const uart1::RegisterBlock {
-        0x5021_0000 as *const _
+        0xffff_ffc0_5021_0000 as *const _
     }
 }
 impl Deref for UART1 {
@@ -19816,7 +19816,7 @@ impl UART2 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const uart1::RegisterBlock {
-        0x5022_0000 as *const _
+        0xffff_ffc0_5022_0000 as *const _
     }
 }
 impl Deref for UART2 {
@@ -19835,7 +19835,7 @@ impl UART3 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const uart1::RegisterBlock {
-        0x5023_0000 as *const _
+        0xffff_ffc0_5023_0000 as *const _
     }
 }
 impl Deref for UART3 {
@@ -19854,7 +19854,7 @@ impl SPI0 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const spi0::RegisterBlock {
-        0x5200_0000 as *const _
+        0xffff_ffc0_5200_0000 as *const _
     }
 }
 impl Deref for SPI0 {
@@ -21359,7 +21359,7 @@ impl SPI1 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const spi0::RegisterBlock {
-        0x5300_0000 as *const _
+        0xffff_ffc0_5300_0000 as *const _
     }
 }
 impl Deref for SPI1 {
@@ -21378,7 +21378,7 @@ impl SPI2 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const spi2::RegisterBlock {
-        0x5024_0000 as *const _
+        0xffff_ffc0_5024_0000 as *const _
     }
 }
 impl Deref for SPI2 {
@@ -21432,7 +21432,7 @@ impl SPI3 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const spi3::RegisterBlock {
-        0x5400_0000 as *const _
+        0xffff_ffc0_5400_0000 as *const _
     }
 }
 impl Deref for SPI3 {
@@ -22937,7 +22937,7 @@ impl I2S0 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const i2s0::RegisterBlock {
-        0x5025_0000 as *const _
+        0xffff_ffc0_5025_0000 as *const _
     }
 }
 impl Deref for I2S0 {
@@ -25460,7 +25460,7 @@ impl APU {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const apu::RegisterBlock {
-        0x5025_0200 as *const _
+        0xffff_ffc0_5025_0200 as *const _
     }
 }
 impl Deref for APU {
@@ -27025,7 +27025,7 @@ impl I2S1 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const i2s0::RegisterBlock {
-        0x5026_0000 as *const _
+        0xffff_ffc0_5026_0000 as *const _
     }
 }
 impl Deref for I2S1 {
@@ -27044,7 +27044,7 @@ impl I2S2 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const i2s0::RegisterBlock {
-        0x5027_0000 as *const _
+        0xffff_ffc0_5027_0000 as *const _
     }
 }
 impl Deref for I2S2 {
@@ -27063,7 +27063,7 @@ impl I2C0 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const i2c0::RegisterBlock {
-        0x5028_0000 as *const _
+        0xffff_ffc0_5028_0000 as *const _
     }
 }
 impl Deref for I2C0 {
@@ -30785,7 +30785,7 @@ impl I2C1 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const i2c0::RegisterBlock {
-        0x5029_0000 as *const _
+        0xffff_ffc0_5029_0000 as *const _
     }
 }
 impl Deref for I2C1 {
@@ -30804,7 +30804,7 @@ impl I2C2 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const i2c0::RegisterBlock {
-        0x502a_0000 as *const _
+        0xffff_ffc0_502a_0000 as *const _
     }
 }
 impl Deref for I2C2 {
@@ -30823,7 +30823,7 @@ impl FPIOA {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const fpioa::RegisterBlock {
-        0x502b_0000 as *const _
+        0xffff_ffc0_502b_0000 as *const _
     }
 }
 impl Deref for FPIOA {
@@ -31394,7 +31394,7 @@ impl SHA256 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const sha256::RegisterBlock {
-        0x502c_0000 as *const _
+        0xffff_ffc0_502c_0000 as *const _
     }
 }
 impl Deref for SHA256 {
@@ -31838,7 +31838,7 @@ impl TIMER0 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const timer0::RegisterBlock {
-        0x502d_0000 as *const _
+        0xffff_ffc0_502d_0000 as *const _
     }
 }
 impl Deref for TIMER0 {
@@ -32344,7 +32344,7 @@ impl TIMER1 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const timer0::RegisterBlock {
-        0x502e_0000 as *const _
+        0xffff_ffc0_502e_0000 as *const _
     }
 }
 impl Deref for TIMER1 {
@@ -32363,7 +32363,7 @@ impl TIMER2 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const timer0::RegisterBlock {
-        0x502f_0000 as *const _
+        0xffff_ffc0_502f_0000 as *const _
     }
 }
 impl Deref for TIMER2 {
@@ -32382,7 +32382,7 @@ impl WDT0 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const wdt0::RegisterBlock {
-        0x5040_0000 as *const _
+        0xffff_ffc0_5040_0000 as *const _
     }
 }
 impl Deref for WDT0 {
@@ -33593,7 +33593,7 @@ impl WDT1 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const wdt0::RegisterBlock {
-        0x5041_0000 as *const _
+        0xffff_ffc0_5041_0000 as *const _
     }
 }
 impl Deref for WDT1 {
@@ -33612,7 +33612,7 @@ impl OTP {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const otp::RegisterBlock {
-        0x5042_0000 as *const _
+        0xffff_ffc0_5042_0000 as *const _
     }
 }
 impl Deref for OTP {
@@ -33666,7 +33666,7 @@ impl DVP {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const dvp::RegisterBlock {
-        0x5043_0000 as *const _
+        0xffff_ffc0_5043_0000 as *const _
     }
 }
 impl Deref for DVP {
@@ -35067,7 +35067,7 @@ impl SYSCTL {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const sysctl::RegisterBlock {
-        0x5044_0000 as *const _
+        0xffff_ffc0_5044_0000 as *const _
     }
 }
 impl Deref for SYSCTL {
@@ -43175,7 +43175,7 @@ impl AES {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const aes::RegisterBlock {
-        0x5045_0000 as *const _
+        0xffff_ffc0_5045_0000 as *const _
     }
 }
 impl Deref for AES {
@@ -44838,7 +44838,7 @@ impl RTC {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
     pub const fn ptr() -> *const rtc::RegisterBlock {
-        0x5046_0000 as *const _
+        0xffff_ffc0_5046_0000 as *const _
     }
 }
 impl Deref for RTC {
